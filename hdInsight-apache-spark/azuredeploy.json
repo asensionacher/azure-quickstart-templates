@@ -172,8 +172,8 @@
                 },
                 "osProfile": {
                   "linuxOperatingSystemProfile": {
-                    "username": "[parameters('loginUsername')]",
-                    "password": "[parameters('loginPassword')]"
+                    "username": "[parameters('loginUsernameSsh')]",
+                    "password": "[parameters('loginPasswordSsh')]"
                   }
                 },
                 "virtualNetworkProfile": {
