@@ -55,7 +55,7 @@
     "variables": {
         "defaultApiVersion": "2015-06-15",
         "clusterApiVersion": "2015-03-01-preview",
-        "clusterType": "hadoop",
+        "clusterType": "spark",
         "clusterVnetSubnetName": "[concat(parameters('clusterName'),'-subnet')]",
         "clusterVnetAddressSpace": "172.16.228.0/23",
         "clusterVNetSubnetAddressRange": "172.16.229.0/24",
