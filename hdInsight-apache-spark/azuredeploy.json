@@ -20,6 +20,18 @@
                 "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
             }
         },
+        "loginUsernameSsh": {
+            "type": "string",
+            "metadata": {
+                "description": "These credentials can be used to submit jobs to the cluster, log into cluster dashboards, log into Ambari, and SSH into the cluster."
+            }
+        },
+        "loginPasswordSsh": {
+            "type": "securestring",
+            "metadata": {
+                "description": "The password must be at least 10 characters in length and must contain at least one digit, one non-alphanumeric character, and one upper or lower case letter."
+            }
+        },
         "clusterNodeSize": {
             "type": "string",
             "defaultValue": "Standard_D12",
@@ -136,8 +148,8 @@
                 },
                 "osProfile": {
                   "linuxOperatingSystemProfile": {
-                    "username": "[parameters('loginUsername')]",
-                    "password": "[parameters('loginPassword')]"
+                    "username": "[parameters('loginUsernameSsh')]",
+                    "password": "[parameters('loginPasswordSsh')]"
                   }
                 },
                 "virtualNetworkProfile": {
