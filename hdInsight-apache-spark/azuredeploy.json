@@ -46,7 +46,7 @@
         },
         "clusterWorkerNodeCount": {
             "type": "int",
-            "defaultValue": 2,
+            "defaultValue": 1,
             "metadata": {
                 "description": "The number of worker nodes in the HDInsight cluster."
             }
@@ -55,11 +55,11 @@
     "variables": {
         "defaultApiVersion": "2015-06-15",
         "clusterApiVersion": "2015-03-01-preview",
-        "clusterType": "hadoop",
+        "clusterType": "spark",
         "clusterVnetSubnetName": "[concat(parameters('clusterName'),'-subnet')]",
         "clusterVnetAddressSpace": "172.16.228.0/23",
         "clusterVNetSubnetAddressRange": "172.16.229.0/24",
-        "clusterStorageAccountName": "[concat(parameters('clusterName'),'storeacc')]",
+        "clusterStorageAccountName": "lsstoragespark",
         "clusterVNetName": "[concat(parameters('clusterName'),'-vnet')]",
         "hadoopZookeeperSize": "Small",
         "hbaseZookeeperSize": "Medium"
