@@ -3,19 +3,19 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "clusterName": {
-            "value": "#####"
+            "value": "labsspark"
         },
        "loginUsername": {
-            "value": "hdiuser"
+            "value": "admin"
         },
         "loginPassword": {
-            "value": "changeme"
+            "value": "Sapad123!"
         },
         "loginUsernameSsh": {
-            "value": "hdiuser"
+            "value": "sshadmin"
         },
         "loginPasswordSsh": {
-            "value": "changeme"
+            "value": "Sapad123!"
         }
     }
 }
